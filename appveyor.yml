@@ -1,0 +1,17 @@
+version: 1.0.{build}
+configuration: Release
+platform: x64
+build:
+  project: printcommandline.sln
+  verbosity: minimal
+skip_tags: true
+test: off
+artifacts:
+- path: x64/Release/printcommandline.exe
+  name: Release
+deploy:
+- provider: GitHub
+  auth_token:
+    secure: FA0xahKGq6AVJEOd1Oen0xPbbM3C9qETfDj69A93xeVyLDlQazwyJa1Si6fn8OMo
+  on:
+    branch: master
