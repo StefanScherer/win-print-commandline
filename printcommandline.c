@@ -6,6 +6,8 @@
 
 int __cdecl main(int argc, char **argv)
 {
+  int i;
+
   // Validate the parameters
   if (argc == 2 && ! strcmp(argv[1], "--help")) {
     printf("usage: %s <any args you want ...>\n", argv[0]);
@@ -16,7 +18,7 @@ int __cdecl main(int argc, char **argv)
   printf("GetCommandLine = %s\n", GetCommandLine());
 
   printf("argc = %d\n", argc);
-  for (int i=0; i<argc; i++) {
+  for (i=0; i<argc; i++) {
     printf("argv[%d] = %s\n", i, argv[i]);
   }
   return 0;
