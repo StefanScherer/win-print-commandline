@@ -1,5 +1,5 @@
 # win-print-commandline
-[![Build status](https://ci.appveyor.com/api/projects/status/xac75j3av0cwpq47?svg=true)](https://ci.appveyor.com/project/StefanScherer/win-print-commandline)
+[![Build status](https://ci.appveyor.com/api/projects/status/ty3t0iuuvre1ru7j?svg=true)](https://ci.appveyor.com/project/StefanScherer/win-print-commandline)
 
 A little Windows tool print the given commandline to stdout. Could be used inside
 a Windows Docker container to see if and how the command string of a `RUN` command in a Dockerfile is modified until it reaches the Exe in the Container.
