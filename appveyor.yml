@@ -17,10 +17,10 @@ deploy:
     branch: master                 # release from master branch only
     appveyor_repo_tag: true        # deploy on tag push only
 
-deploy_script:
-  - ps: >-
-      Write-Host $env:APPVEYOR_REPO_TAG ;
-      if($env:APPVEYOR_REPO_BRANCH -eq 'master' -And $env:APPVEYOR_REPO_TAG -eq 'true') {
-        $version = $env:APPVEYOR_BUILD_VERSION -replace('\.[^.\\/]+$') ;
-        Write-Host "This is deploy_script for $version"
-      }
+# deploy_script:
+#   - ps: >-
+#       Write-Host $env:APPVEYOR_REPO_TAG ;
+#       if($env:APPVEYOR_REPO_BRANCH -eq 'master' -And $env:APPVEYOR_REPO_TAG -eq 'true') {
+#         $version = $env:APPVEYOR_BUILD_VERSION -replace('\.[^.\\/]+$') ;
+#         Write-Host "This is deploy_script for $version"
+#       }
