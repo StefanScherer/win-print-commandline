@@ -4,7 +4,6 @@ platform: x64
 build:
   project: printcommandline.sln
   verbosity: minimal
-skip_tags: true
 test: off
 artifacts:
 - path: x64/Release/printcommandline.exe
