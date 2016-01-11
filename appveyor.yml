@@ -11,6 +11,7 @@ artifacts:
   name: Release
 deploy:
 - provider: GitHub
+  tag: 1.0.4
   auth_token:
     secure: FA0xahKGq6AVJEOd1Oen0xPbbM3C9qETfDj69A93xeVyLDlQazwyJa1Si6fn8OMo
   on:
