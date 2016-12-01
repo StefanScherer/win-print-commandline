@@ -9,6 +9,8 @@ int __cdecl main(int argc, char **argv)
 {
   int i;
 
+  printf("hello world, new feature");
+  
   // Validate the parameters
   if (argc == 2 && ! strcmp(argv[1], "--help")) {
     printf("usage: %s <any args you want ...>\n", argv[0]);
